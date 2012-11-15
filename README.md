@@ -5,7 +5,7 @@ also making the episodes easier to consume.
 
 ## Usage
 
-`  gem install snackpack
+`  gem install snackpack`
 
 `  mkdir /path/to/where/you/want/to/store/tapas/`
 
