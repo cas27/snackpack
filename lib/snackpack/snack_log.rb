@@ -26,7 +26,7 @@ class SnackLog
   end
 
   def relative_path(menu)
-    menu.gsub!(/#{@stomach}/, './')
+    URI::encode menu.gsub!(/#{@stomach}/, './')
   end
 
   def get_title(menu)
