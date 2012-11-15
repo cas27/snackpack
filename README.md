@@ -5,17 +5,17 @@ also making the episodes easier to consume.
 
 ## Usage
 
-  gem install snackpack
+`  gem install snackpack
 
-  mkdir /path/to/where/you/want/to/store/tapas/
+`  mkdir /path/to/where/you/want/to/store/tapas/`
 
 Copy and edit the snackpack.yml move it into your tapas dir
 
-  cd /path/where/you/are/storing/tapas/
+`  cd /path/where/you/are/storing/tapas/`
   
 First time running this gem will take a while as it downloads all the files
 
-  snackpack username password
+`  snackpack username password`
 
 ## Description
 
