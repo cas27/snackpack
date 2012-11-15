@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'snackpack'
-  s.version = '0.1.7'
+  s.version = '0.1.8'
   s.date = '2012-11-15'
   s.summary = 'Downloads and packages RubyTapas locally'
   s.description = <<-EOF
