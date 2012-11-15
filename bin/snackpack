@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'snackpack'
+
+if ARGV.count >= 2
+  Snackpack.new.enter_avdis_kitchen
+else
+  puts "usage: snackpack username password"
+end

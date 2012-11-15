@@ -1,6 +1,6 @@
-Gem::Specifiction.new do |s|
+Gem::Specification.new do |s|
   s.name = 'snackpack'
-  s.version = '0.0.1'
+  s.version = '0.1.3'
   s.date = '2012-11-14'
   s.summary = 'Downloads and packages RubyTapas locally'
   s.description = <<-EOF
@@ -13,4 +13,5 @@ Gem::Specifiction.new do |s|
   s.files = Dir["lib/**/*"]
   s.require_paths = ["lib"]
   s.homepage = 'https://github.com/cas27/snackpack'
+  s.executables << 'snackpack'
 end
