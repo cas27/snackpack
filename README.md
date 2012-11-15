@@ -1,6 +1,6 @@
 # Snackpack
 
-snackpack is a utility for downloading the [Ruby Tapas](rubytapas.com) episodes locally while
+snackpack is a utility for downloading the [Ruby Tapas](http://rubytapas.com) episodes locally while
 also making the episodes easier to consume.
 
 ## Usage
@@ -19,7 +19,7 @@ First time running this gem will take a while as it downloads all the files
 
 ## Description
 
-[Ruby Tapas](rubytapas.com) is a 3 times a week screencast service by [@avdi](https://twitter.com/avdi).
+[Ruby Tapas](http://rubytapas.com) is a 3 times a week screencast service by [@avdi](https://twitter.com/avdi).
 Avdi is completely awesome and his screencast is a no brainer.
 
 The utility will grab all the episodes you are missing, while also injecting the
