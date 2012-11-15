@@ -5,6 +5,7 @@ require 'fileutils'
 
 require_relative 'snackpack/gobble.rb'
 require_relative 'snackpack/condiments.rb'
+require_relative 'snackpack/snack_log.rb'
 
 class Snackpack
 
@@ -20,7 +21,7 @@ class Snackpack
   def enter_avdis_kitchen
     open_fridge
     unwrap_snacks(get_snackpacks)
-    #TODO build_the_menu (build index linking to all episodes)
+    SnackLog.new(@config[:stomach]).build
   end
 
   private
