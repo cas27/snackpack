@@ -7,15 +7,11 @@ also making the episodes easier to consume.
 
 `  gem install snackpack`
 
-`  mkdir /path/to/where/you/want/to/store/tapas/`
-
-Copy and edit the snackpack.yml move it into your tapas dir
-
-`  cd /path/where/you/are/storing/tapas/`
-  
-First time running this gem will take a while as it downloads all the files
+First time running this gem will create your configuration file which stores where you want to store your local ruby tapas.  Make sure to not miss any slashes in your directory name. `example: /home/user/ruby-tapas/` Also the first run it will take a while as it downloads all the files
 
 `  snackpack username password`
+
+Browse to download directory load up the `snack_log.html` and start enjoying your tapas!
 
 ## Description
 

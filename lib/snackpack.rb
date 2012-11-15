@@ -9,8 +9,8 @@ require_relative 'snackpack/snack_log.rb'
 
 class Snackpack
 
-  def initialize
-    @config = YAML.load_file('snackpack.yml')
+  def initialize(config)
+    @config = YAML.load_file(config)
     @email = ARGV[0]
     @password = ARGV[1]
     @snacker = Mechanize.new
