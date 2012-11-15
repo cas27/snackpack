@@ -2,6 +2,11 @@
 
 require 'snackpack'
 
+unless FileTest.exists?('snackpack.yml')
+  puts "Missing snackpack.yml"
+  exit
+end
+
 if ARGV.count >= 2
   Snackpack.new.enter_avdis_kitchen
 else
