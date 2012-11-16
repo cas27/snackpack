@@ -6,7 +6,7 @@ class SnackLog
   end
 
   def build
-    Dir[@stomach+'*'].each do |folder|
+    Dir[@stomach+'*'].sort.reverse.each do |folder|
       menu = fetch_menu(folder)
       write_log(menu) if menu.first
     end
