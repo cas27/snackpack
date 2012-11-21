@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'snackpack'
-  s.version = '0.1.9'
-  s.date = '2012-11-16'
+  s.version = '0.2.0'
+  s.date = '2012-11-20'
   s.summary = 'Downloads and packages RubyTapas locally'
   s.description = <<-EOF
     Snackpack logs into your RubyTapas subscription and downloads

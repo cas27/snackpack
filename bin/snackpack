@@ -9,13 +9,13 @@ config = File.join(Dir.home(user), ".snackpack")
 unless FileTest.exists?(config)
   puts "Missing #{config}"
   puts "Would you like to create it? (y/n)"
-  input = gets
+  input = STDIN.gets
   case input.downcase.strip
   when "y", "yes"
     puts "Where would you like to save ruby tapas episodes? "
     puts  "example: /home/username/ruby-tapas/"
     puts "Make sure to include the trailing slash /"
-    save_folder = gets.strip
+    save_folder = STDIN.gets.strip
     File.open(config, 'w') { |f| f.puts ":stomach: " + save_folder.inspect }
   else
     exit
