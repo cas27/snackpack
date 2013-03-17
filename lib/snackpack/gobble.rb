@@ -27,7 +27,12 @@ class Gobble
       snack_store = @stomach + tupaware + snack.text 
   
       # dont download file twice
-      unless FileTest.exists?(snack_store)
+      
+      if FileTest.exists?(snack_store)
+        puts "#{snack.text} exists, skipping"
+      else
+        puts "Downloading #{snack.text}"
+
         snack.click.save(snack_store)
         if snack.text.match(/html/)
           Condiments.new(snack_store, condiment.first.text).add
