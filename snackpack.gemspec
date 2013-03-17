@@ -15,4 +15,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.homepage = 'https://github.com/cas27/snackpack'
   s.executables << 'snackpack'
+
+  s.add_runtime_dependency "mechanize", "~> 2.5.1"
 end
