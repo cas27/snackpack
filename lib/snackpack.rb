@@ -2,6 +2,7 @@ require 'mechanize'
 require 'yaml'
 require 'tempfile'
 require 'fileutils'
+require 'parallel'
 
 require_relative 'snackpack/gobble.rb'
 require_relative 'snackpack/condiments.rb'
@@ -39,7 +40,7 @@ class Snackpack
   end
 
   def unwrap_snacks(snackpacks)
-    snackpacks.each do |pack|
+    Parallel.each(snackpacks) do |pack|
       @snack_pack = pack.click
       Gobble.new(@snack_pack, @snacker, @config[:stomach]).eat
     end
