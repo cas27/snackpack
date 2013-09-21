@@ -20,6 +20,11 @@ unless FileTest.exists?(config)
   else
     exit
   end
+  puts "How many parallel downloads?"
+  input = STDIN.gets.to_i
+  if input
+    File.open(config, 'a') { |f| f.puts ":parallel: " + input.to_s }
+  end
 end
 
 if ARGV.count >= 2

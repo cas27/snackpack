@@ -40,7 +40,7 @@ class Snackpack
   end
 
   def unwrap_snacks(snackpacks)
-    Parallel.each(snackpacks) do |pack|
+    Parallel.each(snackpacks, in_threads: @config[:parallel] || 2) do |pack|
       @snack_pack = pack.click
       Gobble.new(@snack_pack, @snacker, @config[:stomach]).eat
     end
