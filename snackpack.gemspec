@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   s.executables << 'snackpack'
 
   s.add_runtime_dependency "mechanize", "~> 2.5.1"
+  s.add_runtime_dependency "parallel", "~> 0.8.2"
 end
